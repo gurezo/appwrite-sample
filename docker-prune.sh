@@ -14,3 +14,5 @@ docker images -f "dangling=true"
 # イメージを一括削除
 echo "イメージを一括削除"
 docker image prune
+
+docker rmi -f $(docker images -q)
